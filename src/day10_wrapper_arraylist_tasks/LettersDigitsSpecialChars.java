@@ -9,7 +9,6 @@ public class LettersDigitsSpecialChars {
         String digits = "";
         String specialChar = "";
 
-
         for (char each : str.toCharArray()) {
             if (Character.isLetter(each)) {
                 letters += each;

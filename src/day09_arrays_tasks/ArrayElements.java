@@ -24,7 +24,6 @@ public class ArrayElements {
         }
     }
 }
-
 /*Create a class named ArrayElements and write a program with the following specifications:
    1.1 Create an array of integers with a length of 100.
    1.2 Assign values from 1 to 100 to the indexes of the array.

@@ -7,19 +7,16 @@ public class UpperCaseAndLowerCase {
         int upperCount = 0,
             lowerCount = 0;
 
-        for (int each: str.toCharArray()){
-           if (Character.isLetter(each))
-           if (Character.isUpperCase(each)){
-                upperCount++;
-            }else{
-                lowerCount++;
+        for (int each: str.toCharArray()) {
+            if (Character.isLetter(each)) {
+                if (Character.isUpperCase(each)) {
+                    upperCount++;
+                } else {
+                    lowerCount++;
+                }
             }
         }
-        if (upperCount == lowerCount){
-            System.out.println(true);
-        }else {
-            System.out.println(false);
-        }
+        System.out.println(upperCount==lowerCount);
     }
 }
 /*
