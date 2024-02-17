@@ -12,7 +12,7 @@ public class LocalRestaurant {
         Server server2 = new Server("Jen Jenson", 2, 15, false );
         Server[] servers = {server1, server2};
 
-        Chef chef1 = new Chef("Perter Peterson", 3, 25, true);
+        Chef chef1 = new Chef("Peter Peterson", 3, 25, true);
         Chef chef2 = new Chef("Jack Jackson", 4, 20,false);
         Chef[] chefs = {chef1, chef2};
 

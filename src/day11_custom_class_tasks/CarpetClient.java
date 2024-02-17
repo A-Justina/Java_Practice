@@ -13,9 +13,5 @@ public class CarpetClient {
         System.out.println(carpet2);
         System.out.println("Carper costs: $" + carpet2.calcPrice());
 
-
-
     }
-
-
 }
