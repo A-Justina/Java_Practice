@@ -1,4 +1,4 @@
-package day11_custom_class_part2_tasks;
+package day11_custom_class_tasks;
 
 public class EmployeeClients {
     public static void main(String[] args) {

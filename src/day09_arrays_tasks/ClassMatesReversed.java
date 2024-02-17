@@ -8,12 +8,22 @@ public class ClassMatesReversed {
         String [] classMates = {"Khosiyat Akhmedova", "Marcela Vazquez", "Ridwan Khafagi", "Bengisu Karadeniz",
                 "Gulbahor Gulbahor", "Marina Marina", "Nilufar Karimova", "Santiago Lopez",
                 "Winniffer Diluyo", "Zakarya Ameen"};
-        //String [] reversedNames = new String[classMates.length];
 
+        for (int i = 0; i < classMates.length; i++) {
+            String name = classMates[i];
+            String reverseName = "";
+
+            for (int j = name.length() - 1; j >= 0; j--) {
+                reverseName += name.charAt(j);
+            }
+
+            System.out.println(reverseName);
+
+        /*reverses from bottom to top
         for (int i = classMates.length - 1; i >= 0; i--) {
             System.out.println(classMates[i]);
-        }
-    }
+        }*/
+    }}
 }
 /*
 Create a class named ClassMatesReversed and write a program with the following specifications:

@@ -7,12 +7,22 @@ import java.util.Collections;
 public class MoveTheZeros {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,0,2,0,3,0,4,0));
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(1,0,2,0,3,0,4,0));
 
+        int countZero = Collections.frequency(list, 0);
+        list.removeAll(Arrays.asList(0));
+
+        for (int i = 0; i < countZero; i++) {
+            list.add(0);
+        }
+        System.out.println(list);
+
+        /*other way
         Collections.sort(list);
         System.out.println(list);
         Collections.rotate(list, 4);
-        System.out.println(list);
+        System.out.println(list);*/
     }
 }
 /*

@@ -1,4 +1,4 @@
-package day11_custom_class_part2_tasks;
+package day11_custom_class_tasks;
 
 public class Employee {
 
@@ -11,8 +11,6 @@ public class Employee {
     public void work () {
         System.out.println(jobTitle + " " + name + " is working.");
     }
-
-
     public Employee(String name) {
         this.name = name;
     }
@@ -29,7 +27,6 @@ public class Employee {
         this.jobTitle = jobTitle;
         this.salary = salary;
     }
-
 
     public String toString() {
         return "Employee{" +
