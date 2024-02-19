@@ -1,5 +1,7 @@
 package day13_inheritance_tasks.states;
 
+import java.util.logging.StreamHandler;
+
 public class State {
 
     private String name;
@@ -25,8 +27,7 @@ public class State {
 
     public void setName(String name) {
         if(name==null || name.isBlank()|| name.isEmpty()){
-            System.err.println("Can't be null, empty, or blank");
-            System.exit(1);
+            throw new IllegalArgumentException("Can't be null, empty, or blank");
         }
         this.name = name;
     }
@@ -36,9 +37,8 @@ public class State {
     }
 
     public void setAbbreviation(String abbreviation) {
-        if(name==null || name.isBlank()|| name.isEmpty()){
-            System.err.println("Can't be null, empty, or blank");
-            System.exit(1);
+        if(abbreviation==null || abbreviation.isBlank()|| abbreviation.isEmpty()){
+            throw new IllegalArgumentException("Can't be null, empty, or blank");
         }
         this.abbreviation = abbreviation;
     }
@@ -48,9 +48,8 @@ public class State {
     }
 
     public void setPoliticalParty(String politicalParty) {
-        if(name==null || name.isBlank()|| name.isEmpty()){
-            System.err.println("Can't be null, empty, or blank");
-            System.exit(1);
+        if(politicalParty==null || politicalParty.isBlank()|| politicalParty.isEmpty()){
+            throw new IllegalArgumentException("Can't be null, empty, or blank");
         }
         this.politicalParty = politicalParty;
     }
@@ -60,9 +59,8 @@ public class State {
     }
 
     public void setGovernor(String governor) {
-        if(name==null || name.isBlank()|| name.isEmpty()){
-            System.err.println("Can't be null, empty, or blank");
-            System.exit(1);
+        if(governor==null || governor.isBlank()|| governor.isEmpty()){
+            throw new IllegalArgumentException("Can't be null, empty, or blank");
         }
         this.governor = governor;
     }
@@ -72,9 +70,8 @@ public class State {
     }
 
     public void setSenator(String senator) {
-        if(name==null || name.isBlank()|| name.isEmpty()){
-            System.err.println("Can't be null, empty, or blank");
-            System.exit(1);
+        if(senator==null || senator.isBlank()|| senator.isEmpty()){
+            throw new IllegalArgumentException("Can't be null, empty, or blank");
         }
         this.senator = senator;
     }
@@ -85,8 +82,7 @@ public class State {
 
     public void setPopulation(int population) {
         if (population<=0){
-            System.err.println("Population must be greater than zero.");
-            System.exit(1);
+            throw new IllegalArgumentException("Can't be zero or negative");
         }
         this.population = population;
     }
