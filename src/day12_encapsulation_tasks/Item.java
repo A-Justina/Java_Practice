@@ -37,7 +37,6 @@ public class Item {
         }
         this.unitPrice = unitPrice;
     }
-
     public int getQuantity() {
 
         return quantity;
