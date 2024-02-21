@@ -8,7 +8,6 @@ public abstract class Car {
     private double price;
     private String color;
 
-
     public Car(String make, String model, int year, double price, String color) {
         if (make == null || make.isEmpty()){
             throw new RuntimeException("Make must not be null or empty");
