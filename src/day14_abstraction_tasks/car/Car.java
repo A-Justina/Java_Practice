@@ -57,12 +57,13 @@ public abstract class Car {
     public void setColor(String color) {
         this.color = color;
     }
+
     public abstract void start();
 
     public abstract void drive();
 
     public final void stop(){
-        System.out.println("Car stopped");
+        System.out.println(make + model + " stopped");
     }
 
     @Override
@@ -96,5 +97,4 @@ Create an Abstract Class Named 'Car':
     - Non-Abstract Methods:
         - stop()
         - toString()
-
  */
