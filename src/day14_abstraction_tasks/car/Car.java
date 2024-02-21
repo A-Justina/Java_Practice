@@ -10,12 +10,12 @@ public abstract class Car {
 
     public Car(String make, String model, int year, double price, String color) {
         if (make == null || make.isEmpty()){
-            throw new RuntimeException("Make must not be null or empty");
+            throw new RuntimeException("Make can not be null or empty");
         }
         this.make = make;
 
         if (model == null || model.isEmpty()){
-            throw new RuntimeException("must not be null or empty");
+            throw new RuntimeException("Model can not be null or empty");
         }
         this.model = model;
 
