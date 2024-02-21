@@ -1,6 +1,9 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
-public class Mercedes extends Car implements AutoPark{
+import day14_abstraction_tasks.car.AutoPark;
+import day14_abstraction_tasks.car.Car;
+
+public class Mercedes extends Car implements AutoPark {
     public Mercedes(String make, String model, int year, double price, String color) {
         super(make, model, year, price, color);
     }

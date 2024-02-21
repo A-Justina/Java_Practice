@@ -1,6 +1,6 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
-public class Audi extends Car implements AutoPark{
+public class Audi extends Car implements AutoPark {
     public Audi(String make, String model, int year, double price, String color) {
         super(make, model, year, price, color);
     }

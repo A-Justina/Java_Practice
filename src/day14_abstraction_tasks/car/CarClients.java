@@ -1,4 +1,4 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
 public class CarClients {
 

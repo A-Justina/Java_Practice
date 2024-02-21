@@ -1,4 +1,6 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
+
+import day14_abstraction_tasks.car.Car;
 
 public class Toyota extends Car {
     public Toyota(String make, String model, int year, double price, String color) {

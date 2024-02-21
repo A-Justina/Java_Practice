@@ -1,5 +1,7 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
+
+import day14_abstraction_tasks.car.AutoPark;
 
 public interface AutoPilot extends AutoPark {
 

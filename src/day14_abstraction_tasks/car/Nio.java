@@ -1,6 +1,10 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
-public class Nio extends Car implements AutoPark, AutoPilot{
+import day14_abstraction_tasks.car.AutoPark;
+import day14_abstraction_tasks.car.AutoPilot;
+import day14_abstraction_tasks.car.Car;
+
+public class Nio extends Car implements AutoPark, AutoPilot {
     public Nio(String make, String model, int year, double price, String color) {
         super(make, model, year, price, color);
     }

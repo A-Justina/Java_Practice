@@ -1,6 +1,6 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
 
-public class CydeoCar extends Car implements AutoPark, AutoPilot, Flyable{
+public class CydeoCar extends Car implements AutoPark, AutoPilot, Flyable {
     public CydeoCar(String make, String model, int year, double price, String color) {
         super(make, model, year, price, color);
     }

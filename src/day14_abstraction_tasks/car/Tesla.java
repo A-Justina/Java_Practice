@@ -1,4 +1,7 @@
-package day14_abstraction_tasks;
+package day14_abstraction_tasks.car;
+
+import day14_abstraction_tasks.car.AutoPilot;
+import day14_abstraction_tasks.car.Car;
 
 public class Tesla extends Car implements AutoPilot {
 
